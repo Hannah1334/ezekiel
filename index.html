@@ -1,0 +1,431 @@
+<style>
+
+body{
+background-image: url('http://68.media.tumblr.com/a427a4816e04b1676144acf1f957ae79/tumblr_ngblopQP0Z1sulnzno1_500.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#000000;
+}
+
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #333333;}
+
+#title {
+position:absolute;
+padding:10px;
+border:2px solid #222222;
+width:45%;
+height:7%;
+top:16%;
+left:25%;
+background-color:rgba(0,0,0,0.8);
+text-align:center;
+font-size:240%;
+font-family:Aldrich;
+color:#ffffff;
+line-height:150%;
+}
+
+#box {
+position:absolute;
+padding:10px;
+border:2px solid #222222;
+width:15%;
+height:40%;
+left:25%;
+top:30%;
+}
+
+#content {
+position:absolute;
+overflow:auto;
+padding:10px;
+border:2px solid #222222;
+width:25%;
+height:40%;
+left:45%;
+top:30%;
+background-color:rgba(0,0,0,0.8);
+font-family:Athiti;
+font-size:80%;
+color:#ffffff;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:27%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:34%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:41%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:49%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:56%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#222222;
+width:6%;
+height:3%;
+left:63%;
+top:78%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6:hover {
+background-color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs{
+display:block;
+width:100%;
+height:100%;
+text-align:center;
+font-size: 80%;
+color: #ffffff;
+font-family: Athiti;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+display: none;
+}
+
+h1 {
+color: #666666;
+font-family: Aldrich;
+text-align:center;
+font-size: 120%;
+}
+
+b {
+font-size: 100%;
+color:#666666;
+}
+
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Aldrich|Athiti" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('box').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="title">
+Changeling Chimera
+</div>
+
+<div id="box">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JsSC2QJ.jpg"/>
+</div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">History</span>
+</div>
+
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Items</span>
+</div>
+
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Racials</span>
+</div>
+
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Druidism</span>
+</div>
+
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Necromancy</span>
+</div>
+
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Lusus Naturae</span>
+</div>
+
+<div id="content">
+<h1>Basic Information</h1>
+<b>Name:</b> Ezekiel 'Zeke' Hazen<br>
+<b>Occupation:</b> Escapee from Alchemist Agency<br>
+<b>Secondary:</b> Student at Ulreich University?<br>
+<b>Race:</b> Changeling Chimera<br>
+<b>Eyes color:</b> Ever-changing<br>
+<b>Hair color:</b> Ever-changing<br>
+<b>Skin color:</b> Ever-changing<br>
+<b>Height:</b> 5'8
+</div>
+
+<div id="tab1">
+<h1>Backstory</h1>
+Changelings were once a fabled race that once lived among humans in disguise. Changeling mothers would slip into the homes of mortals at night and switch their children with one of their own to trick humans into raising their offspring as if they were their own. Ezekiel's mother did the same with her own child, but during this time was a harsh period in the race's life. Humans had long since found out about the existence of Changeling and had already hunted the creatures to near extinction.
+However, despite his mother's best efforts to hide her son amidst the humans at the age of eighteen Ezekiel's true form was revealed in an accident when Ezekiel slaughtered a home invader to protect  his human parents.
+<br>
+Horrified by the being that had lived right under their very noses Ezekiel's 'parents' turned him in to an underground scientific society known simply as 'The Alchemists'. These scientists forced the Changeling to go through numerous experiment meant to test the boy's abilities to shape-shift. Once satisfied they went onto to graft the genetic code of hundreds of animals into his own DNA with no thought to the negative repercussions this could have for the poor changeling.
+<br>
+After years of these experiments the Alchemists science had ultimately led to Ezekiel's freedom. The changeling was no longer recognizable as a creature of his own race and had gained the ability to grow various limbs and characteristics of other creatures. His freedom came in the form of a monstrous insect-like pincer that had painfully grown from his back. Ezekiel used this new limb to kill several of his tormentors and escape the clutches of the mad scientists.
+<br>
+Upon his freedom Ezekiel found a letter float out of the sky. An invitation to a place called Ulreich University?
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8ZgXx09.jpg"/>
+</div>
+
+<div id="tab3">
+<h1>High Mage Medium</h1>
+<b>GrimmBeast Skull:</b><br>
+A skull of a creature resembling that of the corrupted creatures known as GrimLords.
+<br>
+The skull is much larger than Ezekiel’s head and is worn as a mask/ helmet.
+<br>
+The Skull itself is as tough as Titanium along with the horns on it. The skull when charged with mana boosts his strength and speed to 1.5x levels in whichever form he currently is in.
+<br>
+Druidism Aspects: The skull merges and shifts with whichever form Ezekiel is in. If further charged with mana it increases the speed at which he can shift forms and use partial transformations. More specifically when used in conjunction with his Chameleos Snagas forms or Behemoth Wendigo he can shift between them without the post wait so long as the Medium is used to do so.
+<br>
+Necromancy Aspects: Using the mask Ezekiel is able to bring greater strength to his summoned Constructs granting them a fifty percent increase in size, but not in durability. When used in conjunction with Spinal Beast Tendril it can be charged with the effects of Surge Whiplash the post it is conjured, but at a greater mana cost.
+<br><br>
+<h1>Rudolph Contract</h1>
+Hidden inside of a neatly decorated envelope complete with christmas seal, the Rudolph contract is a small piece of paper that will dissipate into energy and bind with it's owner upon contact. It allows the owner to summon a familiar to their location for a maximum duration of 3 posts. The familiar itself is Rudolph: A large, energy based Reindeer made out of an ethereal red aura. His trademark nose light becomes active after summoning, and this will clear both physical and magical based darkness, and can cut through deception spells and umbramancy darkness of up to expert mage in ranking. The Reindeer will quietly follow your character around for a maximum length of three posts before dissipating for at least a single rotation. He can be summoned again for additional mana. This light field only extends for 10 feet around the casters body, and Rudolph may not run off on his own.  
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/jjD3e9s.png"/>
+</div>
+
+<div id="tab5">
+<h1>Changeling Chimera Racials</h1>
+<b>Changeling Chimera:</b><br>
+Once a normal Changeling after various genetic splicing experiments he could no longer be recognized as a creature of his race.
+<br><br>
+<b>Uncontrollable Change:</b><br>
+Ezekiel can no longer change his humanoid shape and can no longer control his skin, eye, or hair color which causes it to shift with his emotions.
+<br><br>
+<b>Bestial Horns:</b><br>
+Three horns now jut from Ezekiel's head two small ones on each side of his head and one a foot long on his right side as well.
+<br><br>
+<b>Monstrous Appendage:</b><br>
+The most notable change brought upon by the experiments is the growth of a large insectoid abdomen growing from the base of his spine with a large pincer at the end of it. The appendage is four feet long and the mandibles of the pincer a foot long each. The appendage is covered in a thick exoskeleton as tough as aluminum while the pincers themselves are incredibly sharp and can puncture iron with ease as well as having the strength to support Ezekiel's body weight. However, while this limb is quite powerful it is attached to his spine. If pulled with enough force he can be paralyzed for a duration and if ripped his spine can be torn out as well.
+<br><br>
+<b>Back Spines:</b><br>
+Along the vertebra of his spine are several three inches long spines that are as sharp as Iron, but damage taken to these can also cause damage to Ezekiel's spine.
+<br><br>
+<b>Secondary Maw:</b><br>
+At the base of Ezekiel's Sternum to his navel is a second mouth filled with sharp teeth. This mouth opens directly to his stomach and eating through this mouth helps him regenerate stamina at a faster rate from food he eats, but this is also a weakness that can be exploited since the mouth opens to one of his vital organs.
+<br><br>
+2x strength&speed of a human
+<br><br>
+2x weakness to fire and ice magic or severe temperature changes.
+<br><br>
+1.5x resistance to nature based attacks
+<br><br>
+<h1>Post High Mage Racials</h1>
+<b>BioLich Chimera:</b><br>
+Thanks  to the increasing instability of his genetic matter due to his continued use of Druidism and his already unstable genetic make-up Ezekiel's body has undergone a metamorphosis to better stabilize his form and draw strength from it. However, the change itself is drastic in nature and his new body requires excessive bio-energy to sustain itself. Strength and Speed now 3x peak human levels.
+<br><br>
+<b>Biofeast:</b><br>
+While Ezekiel can still eat regular food to sustain himself it now leaves him feeling unsatisfied and increases his hunger. Ezekiel now draws energy from the flesh of living and undead creatures allowing him to store more energy than other creatures via his ‘diet’. Ezekiel must feed once a month at least or suffer from diminished sanity and fatigue from intense hunger.
+<br>
+Eating a living corpse will give Ezekiel stamina equivalent to a short nap.
+<br><br>
+<b>Devouring Maw:</b><br>
+Ezekiel's second mouth has expanded and now extends up his body into the mouth on his face. This allows him to better devour prey, but now completely seals itself until it's in use. Now lining the entirety of his new mouth are rows of sharp teeth capable of shredding apart iron and breaking down food in seconds. The same as before using this mouth in combat is extremely dangerous as it opens his vitals up for attacks. 
+<br><br>
+<b>Retractable Spines:</b><br>
+His once clearly visible spikes running along his back can now sink back within his skin and jut back out at will. However, this ability to move his spines is a natural weakness. If an opponent can grab and pull out one of his spines it can cause horrendous damage or even the destruction of his entire spine.
+<br><br>
+<b>Deadly Growth:</b><br>
+Ezekiel’s tail has grown another foot in length and gained set of pincers at the end of his tail parallel with the original pair. The carapace of his tail has hardened to become as dense as iron while the pincers of his tail have grown in strength and are now capable of puncturing steel.
+<br><br>
+<b>Highly Flammable:</b><br>
+Ezekiel genetic structure whilst becoming more stable has had an unexpected side effect becoming more susceptible to the effects of extreme heat and pyromancy. 2.5x weakness to Pyromancy and a 2x weakness to any magical flames (Save for soulfire) and Ezekiel can deal with hot temperatures x2 less than a regular human. The nature of his race has also causes him to take 2x damage from Light Radiance.
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/kwloYmg.png"/>
+</div>
+
+<div id="tab7">
+<h1>Druidism (Archmage)</h1>
+<i>"Magic which allows the caster to transform into an animal. Whether it be for agility, dexterity, small size, raw power, or simple deception, the ability to transfigure is a skill of adaptability and creativity. Druids are attuned to the natural world through this process, and are passively capable of communicating with wildlife. Upon reaching expert mage, Druids gain access to lunar energy, a powerful mana that can inflict coldburn,  freezing the innards of a person while simultaneously burning their skin. This can cause extreme necrotic damage in certain scenarios."</i>
+<br><br>
+<h1>Paige Spells</h1>
+<b>Teelow Form:</b><br>
+After studying the local wildlife. Ezekiel can mimic the shape of the creatures called Teelows in every way including the trademark cry resembling that of a terrorist.
+<br><br> 
+<b>Partial Transformation Impalar Quills:</b><br>
+Causes a thick layer of foot long quills to sprout from Ezekiel's back. These can pierce through tin-iron from paige-mage.
+<br><br>
+<b>Thickscaled Skin:</b><br>
+Ezekiel's skin changes into thick scales with defensive qualities. The scales start off as tough as Tin, but scale to Iron at mage rank.
+<br><br>
+<h1>Mage Spells</h1>
+<b>Thickscaled Skin Upgrade Chameleos Hide:</b><br>
+Along with a boost in defensive qualities in his scales Iron to cobalt from mage to expert rank. His scales can now change color to match that of his environment to act as a sort of active camouflage.
+<br><br>
+<b>Partial Transformation Dracowasp Wings:</b><br>
+Ezekiel grows four vestigial wings resembling those of a giant dragonfly. These wings may not be very durable, but they allow him fly long distances quickly in short burst of speed. 2x to 3x at Expert.
+<br><br>
+<b>Partial Transformation Werespider:</b><br>
+Ezekiel grows four new spider limbs allowing him to scale walls and other terrain with ease. These five foot long limbs are tipped with sharp spikes that are capable or piercing iron to Cobalt (Mage to Expert rank). Along with this transformation is one that affects the large pincer on his back and causes him to grow a spinneret between the two pincers. This organ allows him to spray webs at a range of ten feet. The webs themselves are as thick as Iron (Cobalt at Expert) and can support his base weight, but burn with relative ease.
+<br><br>
+<b>Natural Enhancement Monstrous Appendage:</b><br>
+Ezekiel channels his magic into the appendage on his back causing it to grow exponentially. It’s base length doubles to eight feet and the pincers on the end to grow two feet larger. This transformation increases the natural strength of this appendage allowing it to puncture Iron to Cobalt from mage to expert respectively.
+<br><br>
+<p align="center"><img style="width:100%;" src="https://i.imgur.com/0ay1o6O.png"/></p>
+<h1>Expert Mage+ Spells</h1>
+<b>Coldfire Cloak:</b><br>
+Coats the caster in a thick veil of coldfire burning anyone touched by the caster and spreading necrosis to areas hit. This cloak takes longer to form depending on how large of a form the user is currently in. The true strength of this spell lies in its ability to protect its user from weaker energy attacks usually Adept to Expert or weaker spells will be nullified by the effects of the cloak. However, spells normally used to cancel or put out flames are more effective against it and Expert Mage level aquamancy spells can put out the coldfire with ease. Otherwise spells of equal rank will be nullified, but the cloak will expire as well. This spell has no post limit, but drains the users mana at a consistent rate and if put out one must wait two posts before it can be recast.
+<br><br>
+<b>Lunar Splitting Spear:</b><br>
+Using coldfire the caster creates and eight foot long spear of lunar energy that can be thrown fifteen feet. Upon reaching the end of its range it splits into four smaller spears and going onward ten more feet. The spear and its fragments each have the strength to pierce cobalt to Titanium at High Mage, but the amount of necrosis spread is increased if hit by the full sized spear.
+<br><br>
+<b>Full Transformation Nagas Chameleos:</b><br>
+Ezekiel shifts into a powerful snake-beast known as the Nagas Chameleos a humanoid snake creature that stands at a little over seven feet tall, but usually walks on all fours. This creature uses its shifting hide to not only blend into its environment, but also changes its genetic structure to incorporate other species of snakes into its current abilities and physical attributes.
+<br>
+While it takes a post to change forms each one has unique, but deadly features. During these transformations Ezekiel must remain stationary and opens himself up to attacks and has to shed his defensive hide for its entirety until the transformation is complete.
+<br><br>
+<b>Boa Constrictor:</b><br>
+3x Human Speed & Strength.This form has a longer tail (8ft in length) and uses it to crush foes with ease and can crush cobalt to titanium at High Mage with its powerful tail muscles.
+<br><br>
+<b>Emerald Python:</b><br>
+2x Human strength & Speed. This form has powerful sensory organs and has the capability to smell targets of equal rank as far as it can see as well as having a powerful thermal sense due to developed organs on the side of its head.
+<br><br>
+<b>Behemoth Wendigo Full Transformation:</b><br>
+This spell requires the caster to channel mana for one full post before transforming on the second one. This spell causes the user to transform into a fifteen foot tall monstrosity a Wendigo of sorts although much too large to be considered an ordinary one. It’s claws, teeth, and horns are all capable of tearing through cobalt with ease (To Titanium at High Mage) athough with its sheer strength alone it is capable of crushing said metals. X4 human strength X1.5 human speed. However, a distinct difference with this creature is its massive right arm, while its left arm is nine feet in length its right arm is a little over twelve feet long and bulging with powerful muscles having strength X6 that of human levels although using said limb drains stamina at a higher rate. This spell has no time limit, but drains mana at a substantial rate for every post it is used. Once over it takes another four posts until this form can be used again.
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/GuFW5Ra.jpg"/>
+</div>
+
+<div id="tab9">
+<h1>Necromancy (Mage)</h1>
+<i>"The common Necromancer devotes their time to the collection of corpses, and the infusion of said corpses with their wicked mana. Through a unique mana type called Soul Fire, Necromancers may create artificial souls to be placed within the corpse of a once living being. Necromancers may also use this Soul Fire to assault their enemies; effects of Soul Fire vary from Necromancer to Necromancer, although it often damages the soul in some way. Necromancers may also use their magic to revive fallen comrades or enemies, reducing their will, but not their strength. A Necromancer may only revive mages of their current rank or below."</i>
+<br><br>
+<b>Grasp of the Dying:</b><br>
+Conjures two skeletal hands to grasp at the ankles of an opponent. These stay around for a three post duration and if they're destroyed the caster must wait one post before resummoning them. These are only as durable as tin at paige (Scaling to Iron at Mage). As the spell scales to mage more hands can be summoned ex. 4 at apprentice to 6 at mage rank.
+<br><br>
+<b>Soul Fire Charge: (Taught by Drags)</b><br>
+This spell allows the caster to ignite a small ovular soul flame. This ovular flame will be slow, however, it will have slight tracking to it. In order to aim this spell the caster must see and mentally aim the spell and will have a maximum 15 foot range; however, it only has a 10 feet tracking range so after its limit the spell will simply shoot at a straight line afterwards. If someone is hit by the spell then spells with soul fire will do a little more damage. Only one charge can be given at a time, once a soul fire spell is used on the inflicted the charge will disperse until another one replaces it.
+<br><br>
+<b>Soul Surge Whiplash:</b><br>
+Creates a a whip of soulfire six feet in length to lash out and strike an opponent. This spell dissipates after hitting something and causes a slight shock upon contact as well as a slight burn (Like from a bic lighter) This sensations scales to nerve wracking sensations at mage rank.
+<br><br>
+<b>Spineworm Cluster:</b><br>
+Ezekiel Conjures a large construct appearing to look like a spiky ball of bones and skulls, but is actually made up of four to five Spineworms. The Spineworms themselves are three foot long creatures made from spiky spinal cords with small seemingly human skulls as the head of the creatures. The creatures themselves are as durable as aluminum, but their spikes are sharp enough to cut through iron. Upon hitting a target they scatter and wrap themselves around their target and try to continuously wrap around their target to cause lacerations and cause the target to bleed out. The duration of their conjuration is 3 posts, but if destroyed there is a one post limit until they can be summoned again. The cluster itself can be lobbed up to fifteen feet away and the ball itself is as durable as iron.
+<br><br>
+<b>Soul Fire Charge/ Upgrade Detonating Charges:</b><br>
+Soul Fire Charges with upgraded seeking capabilities now locking onto the target’s soul signature, but the capabilities of this spell don’t stop there. Once one Soul Fire Charge is placed if another lands on a target it causes the first placed charge to detonate causing a small, but extremely painful iron grade explosion. If hit with any other soulfire spells the usual damage buff is applied instead.
+<br><br>
+<b>Soulfire Surge Whiplash/ Upgrade Spinal Beast Tendril:</b><br>Conjures an eight foot long creature made from a human skull and a long spiked spinal cord with the first half inch of its neck being the only part uncovered with sharp spines. The caster uses this summon as an iron grade whip, but if it hits a target it wraps around the target it latches around the foes to rip and rend flesh. If charged with mana for a post it can carry the spell Soulfire Surge Whiplash along the tail of this construct. Summon duration is four posts while the time needed to resummon when destroyed is two posts.
+<br><br>
+<b>Screaming Ward:</b><br>
+Summons a six foot tall and six foot wide ‘wall’ of screaming skulls knitted together by thick flesh and bones as thick as iron. The screams themselves causes distress in those who are within a five foot radius of one side of the wall and effects those of lower ranking than this spell and serving as a distraction or shield in any other case, but in order to produce the screaming effect it mana must be channeled through the wall.However, those with enhanced hearing will take major damage from this spell with the potential of causing temporary deafness if too close. Duration is three posts and resummon time if destroyed is two posts.
+</div>
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JbPYkRD.jpg"/>
+</div>
+
+<div id="tab11">
+<h1>Lusus Naturae; Druidism + Necromancy (Archmage)</h1>
+<i>"A rank path unlike any other. The mages which choose to follow this path will fuse their major and minor trees, creating an all new tree completely unique to themselves. Mages who's two trees each possess a unique mana type will now possess an entirely new mana type, which incorporates aspects of both of their previous mana types. Archmages will still be able to create and use spells from their individual trees. "</i>
+<br><br>
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/vCRsqxE.png"/>
+</div>
